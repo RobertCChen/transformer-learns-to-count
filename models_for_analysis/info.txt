@@ -1,0 +1,7 @@
+failed_rnn,lstm,transformer trained for 50, 35, 20 epochs, resp. 
+failed_rnn converged to 1 accuracy in 28 epochs, lstm in 13, transformer in 8.
+failed_rnn doesn't generalize and exhibits the "bad" state dynamics described in can_rnns_count paper.
+See model_storage/model_rnn for an rnn that does generalize and has "good" state dynamics
+lstm generalize
+transformer generalizes. both model_storage/model_transtormer and ./m_transformer have
+similar state dynamics, namely, spiral mv't on `a`, linearly move toward attracting point upon `b`.
